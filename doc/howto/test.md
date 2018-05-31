@@ -6,6 +6,6 @@ description: THis is a description
 tags:
   - first gat
 ---
-![Chess Image](/static/public/chess.jpg)
+![Chess Image](/assets/chess.jpg)
 
 # Also great
