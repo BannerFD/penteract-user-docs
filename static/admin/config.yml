@@ -3,7 +3,7 @@ backend:
   repo: BannerFD/penteract-user-docs
 
 media_folder: static/assets
-public_folder: static/public
+public_folder: assets
 
 collections:
   - name: faq
