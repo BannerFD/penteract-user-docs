@@ -11,6 +11,7 @@ collections:
     folder: doc/faq
     create: true
     fields:
+      - { name: title, label: Title }
       - { name: version, label: Version }
       - { name: question, label: Question }
       - { name: response, label: Response, widget: markdown }
