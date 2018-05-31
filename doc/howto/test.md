@@ -5,6 +5,7 @@ path: test
 description: THis is a description
 tags:
   - first gat
+  - test
 ---
 ![Chess Image](/assets/chess.jpg)
 
