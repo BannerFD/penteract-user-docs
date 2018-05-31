@@ -1,12 +1,12 @@
 ---
-title: Thisis question 1
+title: Navigate Penteract
 version: Lithium
-path: test
-description: THis is a description
+path: navigate-penteract
+description: >-
+  In this article we explore options and features available to you through
+  Penteract.
 tags:
-  - first gat
-  - test
+  - navigation
+  - beginner
 ---
-![Chess Image](/assets/chess.jpg)
-
-# Also great
+# Penteract Navigation
