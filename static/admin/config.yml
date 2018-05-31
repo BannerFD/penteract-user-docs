@@ -3,12 +3,12 @@ backend:
   repo: BannerFD/penteract-user-docs
 
 media_folder: static/assets
-public_folder: assets
+public_folder: static/public
 
 collections:
   - name: faq
     label: Frequently Asked Questions
-    folder: faq
+    folder: doc/faq
     create: true
     fields:
       - { name: version, label: Version }
