@@ -11,7 +11,14 @@ import {
 const SecondPage = () => (
   <div>
     <h1>Contact Us</h1>
-    <form name="question" method="POST" netlify>
+    <form
+      name="question"
+      method="POST"
+      action="/success/"
+      data-netlify="true"
+      data-netlify-honeypot="bot-field"
+    >
+      <input type="hidden" name="bot-field" />
       <FormGroup>
         <ControlLabel>Your Name</ControlLabel>
         <FormControl

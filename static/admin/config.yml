@@ -1,6 +1,6 @@
 backend:
-  name: bitbucket
-  repo: fifthdomain/user_docs
+  name: github
+  repo: BannerFD/penteract-user-docs
 
 media_folder: static/assets
 public_folder: assets
