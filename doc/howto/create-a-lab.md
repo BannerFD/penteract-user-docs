@@ -1,12 +1,12 @@
 ---
-title: Create A Lab
+title: Teach Page
 version: Lithium
-path: create-a-lab
-description: >-
-  This article walks you through creating a lab, adding content and virtual
-  machines, and publishing it to users and groups. 
+path: teach-page
+description: 'This article walks you through operations you may preform on the teach page. '
 tags:
-  - teach prototypes
+  - teach
+  - prototypes
+  - beginner
 ---
 This is the content
 
