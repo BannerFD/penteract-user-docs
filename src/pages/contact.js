@@ -48,7 +48,9 @@ const SecondPage = () => (
           required={true}
         />
       </FormGroup>
-      <Button bsStyle="info">Submit</Button>
+      <Button type="submit" bsStyle="info">
+        Submit
+      </Button>
     </form>
   </div>
 )
