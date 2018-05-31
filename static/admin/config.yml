@@ -10,16 +10,20 @@ collections:
     label: Frequently Asked Questions
     folder: doc/faq
     create: true
+    extension: md
     fields:
-      - { name: title, label: Title }
+      - { name: title, label: Question }
       - { name: version, label: Version }
-      - { name: question, label: Question }
-      - { name: response, label: Response, widget: markdown }
+      - { name: body, label: Response, widget: markdown }
   - name: howto
     label: How To
     folder: doc/howto
     create: true
+    extension: md
     fields:
       - { name: title, label: Title }
       - { name: version, label: Version }
-      - { name: instructions, label: Instructions, widget: markdown }
+      - { name: path, label: Path }
+      - { name: description, label: Description }
+      - { name: tags, label: Tags, widget: list }
+      - { name: body, label: Instructions, widget: markdown }

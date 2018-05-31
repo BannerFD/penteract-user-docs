@@ -49,7 +49,7 @@ class V3 extends Component {
                   }}
                 >
                   <Panel>
-                    <Panel.Heading>{edge.node.frontmatter.name}</Panel.Heading>
+                    <Panel.Heading>{edge.node.frontmatter.title}</Panel.Heading>
                     <Panel.Body>
                       <p>{edge.node.frontmatter.description}</p>
                     </Panel.Body>
@@ -79,13 +79,15 @@ class V3 extends Component {
           return (
             <Panel key={index} style={{ fontSize: '20px' }}>
               <Panel.Heading onClick={() => this.mkopen(index)}>
-                {edge.node.frontmatter.question}
+                {edge.node.frontmatter.title}
               </Panel.Heading>
               <Collapse in={this.state.open[index]}>
                 <Panel.Body>
                   <div
                     className="blog-post-content"
-                    dangerouslySetInnerHTML={{ __html: edge.node.html }}
+                    dangerouslySetInnerHTML={{
+                      __html: edge.node.html,
+                    }}
                   />
                 </Panel.Body>
               </Collapse>
@@ -106,12 +108,15 @@ class V3 extends Component {
 export const pageQuery = graphql`
   query v3Faq {
     faq: allMarkdownRemark(
-      filter: { frontmatter: { version: { eq: 3 }, faq: { eq: true } } }
+      filter: {
+        fileAbsolutePath: { regex: "/faq/" }
+        frontmatter: { version: { eq: "Lithium" } }
+      }
     ) {
       edges {
         node {
           frontmatter {
-            question
+            title
           }
           html
         }
@@ -119,14 +124,18 @@ export const pageQuery = graphql`
     }
 
     howto: allMarkdownRemark(
-      filter: { frontmatter: { version: { eq: 3 }, howto: { eq: true } } }
+      filter: {
+        fileAbsolutePath: { regex: "/howto/" }
+        frontmatter: { version: { eq: "Lithium" } }
+      }
     ) {
       edges {
         node {
+          fileAbsolutePath
           frontmatter {
             path
             tags
-            name
+            title
             description
           }
         }
