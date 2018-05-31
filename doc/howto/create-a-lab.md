@@ -12,14 +12,14 @@ This is the content
 
 
 
-\`\``
+```
 
 function() {
 
 return false;
 
-\`\``
+```
 
 
 
-\# Awesome!
+# Awesome!
