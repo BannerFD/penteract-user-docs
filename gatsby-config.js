@@ -3,6 +3,7 @@ module.exports = {
     title: 'Penteract Docs',
   },
   plugins: [
+    `gatsby-plugin-netlify-cms`,
     'gatsby-plugin-react-helmet',
     {
       resolve: `gatsby-source-filesystem`,

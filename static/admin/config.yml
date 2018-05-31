@@ -1,0 +1,16 @@
+backend:
+  name: bitbucket
+  repo: fifthdomain/user_docs
+
+media_folder: static/assets
+public_folder: assets
+
+collections:
+  - name: faq
+    label: Frequently Asked Questions
+    folder: faq
+    create: true
+    fields:
+      - { name: version, label: Version }
+      - { name: question, label: Question }
+      - { name: response, label: Response, widget: markdown }
