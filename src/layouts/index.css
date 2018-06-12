@@ -247,7 +247,7 @@ h2 {
   font-family: 'Ubuntu', sans-serif;
   font-weight: bold;
   text-rendering: optimizeLegibility;
-  font-size: 1.62671rem;
+  font-size: 1.3rem;
   line-height: 1.1;
 }
 h3 {
@@ -377,6 +377,7 @@ p {
   padding-right: 0;
   padding-top: 0;
   margin-bottom: 1.45rem;
+  font-size: 20px;
 }
 figure {
   margin-left: 0;
@@ -506,6 +507,7 @@ th {
 }
 li {
   margin-bottom: calc(1.45rem / 2);
+  font-size: 20px;
 }
 ol li {
   padding-left: 0;

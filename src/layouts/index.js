@@ -13,28 +13,28 @@ const Layout = ({ children, data }) => (
       meta={[
         {
           name: 'description',
-          content: 'Documentation for the Penteract Software',
+          content: 'Documentation for the Penteract Software'
         },
-        { name: 'keywords', content: 'penteract cyber security software' },
+        { name: 'keywords', content: 'penteract cyber security software' }
       ]}
     />
     <Header siteTitle={data.site.siteMetadata.title} />
     <link
-      href="https://fonts.googleapis.com/css?family=Ubuntu"
-      rel="stylesheet"
+      href='https://fonts.googleapis.com/css?family=Ubuntu'
+      rel='stylesheet'
     />
     <link
-      rel="stylesheet"
-      href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
-      integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
-      crossOrigin="anonymous"
+      rel='stylesheet'
+      href='//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css'
+      integrity='sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u'
+      crossOrigin='anonymous'
     />
 
     <link
-      rel="stylesheet"
-      href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"
-      integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp"
-      crossOrigin="anonymous"
+      rel='stylesheet'
+      href='//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css'
+      integrity='sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp'
+      crossOrigin='anonymous'
     />
 
     <Grid>{children()}</Grid>
@@ -42,7 +42,7 @@ const Layout = ({ children, data }) => (
 )
 
 Layout.propTypes = {
-  children: PropTypes.func,
+  children: PropTypes.func
 }
 
 export default Layout
