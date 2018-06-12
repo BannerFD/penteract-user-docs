@@ -25,6 +25,7 @@ a package is missing please contact us.
 - BodyParser (http body parsing)
 - Multer (http file parsing)
 - Gm (image formatting)
+- Joi (Validation library)
 
 ## Express Patterns (Model, Controller, Routers)
 
@@ -36,4 +37,4 @@ added at your disgression.
 ## Notes for Backend Services
 
 All services will be deployed using multiple instances and load balancing. For
-this reason all services must be stateless. 
+this reason all services must be stateless.
