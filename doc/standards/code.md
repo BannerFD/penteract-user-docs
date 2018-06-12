@@ -38,3 +38,17 @@ added at your disgression.
 
 All services will be deployed using multiple instances and load balancing. For
 this reason all services must be stateless.
+
+## Health Checks
+
+All services should respond to readiness checks and liveness checks.
+
+### Liveness Checks
+
+/health/alive should respond with a status code of 200 when the services is
+running. This does not need to check dependencies such as database connections.
+
+### Readiness Checks
+
+/health/ready should respond witha status code of 200 when the service is
+running and all dependencies (such as databases and queues) are connected. 
