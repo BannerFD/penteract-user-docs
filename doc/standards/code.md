@@ -32,3 +32,8 @@ When using express create three separate folders for each routes, controllers,
 and models. This is essential for people to understand where code is without
 familiarity with the particular project. Other filesystem components may be
 added at your disgression.
+
+## Notes for Backend Services
+
+All services will be deployed using multiple instances and load balancing. For
+this reason all services must be stateless. 
