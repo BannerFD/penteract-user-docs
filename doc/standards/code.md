@@ -26,6 +26,8 @@ a package is missing please contact us.
 - Multer (http file parsing)
 - Gm (image formatting)
 - Joi (Validation library)
+- RxJs (observables)
+- Sequelize, pghstore,  pg (ORM)
 
 ## Express Patterns (Model, Controller, Routers)
 
@@ -51,4 +53,4 @@ running. This does not need to check dependencies such as database connections.
 ### Readiness Checks
 
 /health/ready should respond witha status code of 200 when the service is
-running and all dependencies (such as databases and queues) are connected. 
+running and all dependencies (such as databases and queues) are connected.
