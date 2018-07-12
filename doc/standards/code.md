@@ -28,6 +28,7 @@ a package is missing please contact us.
 - Joi (Validation library)
 - RxJs (observables)
 - Sequelize, pghstore,  pg (ORM)
+- Winston (logging)
 
 ## Express Patterns (Model, Controller, Routers)
 
@@ -54,3 +55,9 @@ running. This does not need to check dependencies such as database connections.
 
 /health/ready should respond witha status code of 200 when the service is
 running and all dependencies (such as databases and queues) are connected.
+
+## Logging
+
+There is no absolute standard in terms of logging. Pease make sure when the
+PRODUCTION environment variable is set to true you log liberally and in json
+format. 
